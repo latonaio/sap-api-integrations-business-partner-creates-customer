@@ -169,13 +169,14 @@ func (sdc *SDC) ConvertToSalesArea() *requests.SalesArea {
 }
 
 func (sdc *SDC) ConvertToPartnerFunction() *requests.PartnerFunction {
-	dataPartnerFunction := sdc.BusinessPartner.CustomerData
+	dataCustomer := sdc.BusinessPartner.CustomerData
+	dataSalesArea := sdc.BusinessPartner.CustomerData.SalesArea
 	data := sdc.BusinessPartner.CustomerData.SalesArea.PartnerFunction
 	return &requests.PartnerFunction{
-		Customer:                   dataPartnerFunction.Customer,
-		SalesOrganization:          data.SalesOrganization,
-		DistributionChannel:        data.DistributionChannel,
-		Division:                   data.Division,
+		Customer:                   dataCustomer.Customer,
+		SalesOrganization:          dataSalesArea.SalesOrganization,
+		DistributionChannel:        dataSalesArea.DistributionChannel,
+		Division:                   dataSalesArea.Division,
 		PartnerCounter:             data.PartnerCounter,
 		PartnerFunction:            data.PartnerFunction,
 		BPCustomerNumber:           data.BPCustomerNumber,
