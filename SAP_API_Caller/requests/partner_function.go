@@ -6,7 +6,7 @@ type PartnerFunction struct {
 	DistributionChannel        string  `json:"DistributionChannel"`
 	Division                   string  `json:"Division"`
 	PartnerCounter             string  `json:"PartnerCounter"`
-	PartnerFunction            *string `json:"PartnerFunction"`
+	PartnerFunction            string `json:"PartnerFunction"`
 	BPCustomerNumber           *string `json:"BPCustomerNumber"`
 	CustomerPartnerDescription *string `json:"CustomerPartnerDescription"`
 	DefaultPartner             *bool   `json:"DefaultPartner"`
