@@ -1,0 +1,20 @@
+{
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-business-partner-reads-customer/SAP_API_Caller/caller.go#L324",
+	"function": "sap-api-integrations-business-partner-reads-customer/SAP_API_Caller.(*SAPAPICaller).Address",
+	"level": "INFO",
+	"message": [
+		{
+			"BusinessPartner": "1000140",
+			"AddressID": "27518",
+			"ValidityStartDate": "",
+			"ValidityEndDate": "",
+			"Country": "US",
+			"Region": "CT",
+			"StreetName": "farmington ave",
+			"CityName": "Berlin",
+			"PostalCode": "06037",
+			"Language": "EN"
+		}
+	],
+	"time": "2022-01-27T21:55:30+09:00"
+}
